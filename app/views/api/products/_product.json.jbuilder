@@ -7,6 +7,7 @@ json.total product.total
 
 json.image_url product.image_url
 json.description product.description
+json.in_stock? product.in_stock
 json.is_discounted product.is_discounted?
 
 json.formatted do
