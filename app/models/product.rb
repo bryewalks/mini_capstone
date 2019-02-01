@@ -1,4 +1,9 @@
 class Product < ApplicationRecord
+  belongs_to :supplier
+  has_many :images
+  has_many :orders
+  has_many :product_categories
+  has_many :categories, through: :product_categories
 
   validates :name, presence: true
   validates :name, uniqueness: true
@@ -10,17 +15,6 @@ class Product < ApplicationRecord
   validates :description, presence: true
   validates :description, length: {in: 10..300}
 
-
-  belongs_to :supplier
-  has_many :images
-
-  # def supplier
-  #   Supplier.find_by(id: self.supplier_id)  
-  # end
-
-  # def images
-  #   Image.where(product_id: self.id)    
-  # end
  
   def is_discounted?
     price < 150   

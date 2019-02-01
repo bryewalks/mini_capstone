@@ -1,9 +1,22 @@
 # Category.create!([
+#                   {name: "Apparel"},
+#                   {name: "VideoCards"}
+
+#                   ])
+# ProductCategory.create!([
+#   {product_id: 1, category_id: 5},
+#   {product_id: 2, category_id: 5},
+#   {product_id: 5, category_id: 5},
+#   {product_id: 8, category_id: 5},
+#   {product_id: 9, category_id: 5},
+#   {product_id: 3, category_id: 5},
+#   {product_id: 4, category_id: 5},
+#   {product_id: 12, category_id: 4}
+# ])
+# Category.create!([
 #   {name: "New"},
 #   {name: "Old"},
-#   {name: "Tshirt"},
-#   {name: "Apparel"},
-#   {name: "VideoCards"}
+#   {name: "Tshirt"}
 # ])
 # Image.create!([
 #   {url: "http://www.vgamuseum.info/images/vlask/3dfx/voodoo2hisfb.jpg", product_id: 4},
@@ -13,8 +26,7 @@
 #   {url: "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/geforce-rtx-turing/tech-shots/geforce-rtx-2080-ti-web-tech-shot-630-u@2x.png", product_id: 9},
 #   {url: "https://bit.ly/2FySNEo", product_id: 2},
 #   {url: "https://www.amd.com/system/files/11340-radeon-rx-480-angled-1260x709_0.png", product_id: 8},
-#   {url: "https://cdn.videocardz.net/cache/18200040c7e7e8ed83b18878d3ae0cb7-1200x900.jpg", product_id: 3},
-#   {url: "https://drh1.img.digitalriver.com/DRHM/Storefront/Company/nvidia/images/product/detail/NVIDIA-Tesselatted-Eye-Graphic-Tee-Black-Front.jpg", product_id: 12}
+#   {url: "https://cdn.videocardz.net/cache/18200040c7e7e8ed83b18878d3ae0cb7-1200x900.jpg", product_id: 3}
 # ])
 # Order.create!([
 #   {user_id: 1, product_id: 1, quantity: 1, subtotal: nil, tax: nil, total: nil},
@@ -46,15 +58,7 @@
 #   {product_id: 9, category_id: 1},
 #   {product_id: 3, category_id: 2},
 #   {product_id: 4, category_id: 2},
-#   {product_id: 12, category_id: 3},
-#   {product_id: 1, category_id: 5},
-#   {product_id: 2, category_id: 5},
-#   {product_id: 5, category_id: 5},
-#   {product_id: 8, category_id: 5},
-#   {product_id: 9, category_id: 5},
-#   {product_id: 3, category_id: 5},
-#   {product_id: 4, category_id: 5},
-#   {product_id: 12, category_id: 4}
+#   {product_id: 12, category_id: 3}
 # ])
 # Supplier.create!([
 #   {name: "Nvidia Factory", email: "NvidiaStore@gmail.com", phone_number: "312-758-7129"},
