@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     get '/carted_products' => 'carted_products#index'
     post '/carted_products' => 'carted_products#create'
+    delete '/carted_products' => 'carted_products#destroy'
 
     get '/orders' => 'orders#index'
     post '/orders' => 'orders#create'
